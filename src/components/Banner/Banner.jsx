@@ -3,6 +3,17 @@ import './Banner.css';
 import { FaSearch } from "react-icons/fa";
 
 const Banner = () => {
+
+
+
+    const handleSearch = (e) =>{
+       
+         console.log(e.target.value);
+       
+    }
+
+
+
     return (
         <div className='banner-image h-96'>
            
@@ -15,7 +26,7 @@ const Banner = () => {
 
                   <div className='p-3 searchBar-container lg:w-4/12 flex justify-between items-center'>
                         <FaSearch className='inline text-xl me-5'/> 
-                        <input type="text" placeholder='Search by Category' className='w-full placeholder:text-slate-300'/>
+                        <input type="text"  onChange={(e)=>handleSearch(e)}   placeholder='Search by Category' className='w-full placeholder:text-yellow-300'/>
                   </div>
              </div>
                    
