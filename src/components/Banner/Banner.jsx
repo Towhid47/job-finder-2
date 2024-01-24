@@ -1,14 +1,20 @@
 import React from 'react';
 import './Banner.css';
 import { FaSearch } from "react-icons/fa";
+import { useContext } from 'react';
+import { searchContext } from '../Layouts/Main';
 
 const Banner = () => {
+
+     const inputSearch = useContext(searchContext);
+
+     const [search , setSearch] = inputSearch;
 
 
 
     const handleSearch = (e) =>{
        
-         console.log(e.target.value);
+         setSearch(e.target.value);
        
     }
 
