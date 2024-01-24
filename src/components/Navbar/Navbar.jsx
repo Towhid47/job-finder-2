@@ -17,7 +17,7 @@ const Navbar = () => {
 
 
     return (
-        <div className='p-5 lg:flex lg:justify-between '>
+        <div className='p-3 lg:flex lg:justify-between '>
                
                {/* //////// Section 1 : Logo & Menu Bar icon Container //////// */}
                <div className='flex items-center justify-between'>

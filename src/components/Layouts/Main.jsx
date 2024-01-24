@@ -4,6 +4,10 @@ import Navbar from '../Navbar/Navbar';
 import Footer from './Footer';
 
 const Main = () => {
+
+
+
+
     return (
         <div>
               <Navbar></Navbar>
