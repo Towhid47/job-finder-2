@@ -25,7 +25,7 @@ const JobDetailsPage = () => {
         <div className='my-9'>
             {/* --------- Details Page Header ------ */}
             <div className='details_page_header h-56 flex justify-center items-center'>
-                  <h1 className='text-3xl text-white italic font-semibold'>Job Details</h1>   
+                  <h1 className='text-3xl text-white font-semibold'>Job Details</h1>   
             </div>
 
 
