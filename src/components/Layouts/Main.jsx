@@ -7,7 +7,7 @@ import Footer from './Footer';
 
    export const searchContext = createContext([]);
 
-    
+   export const jobApplyContext = createContext([]);    
 
 
 const Main = () => {
@@ -16,16 +16,18 @@ const Main = () => {
     const [search , setSearch] = useState('');
   
 
-
+    const [appliedJobs , setAppliedJobs] = useState([]);
 
 
     return (
         <div>
+            <jobApplyContext.Provider value={[appliedJobs , setAppliedJobs]}>
             <searchContext.Provider value={[search , setSearch]}>
                     <Navbar></Navbar>
                     <Outlet></Outlet>
                     <Footer></Footer> 
             </searchContext.Provider>  
+            </jobApplyContext.Provider>
         </div>
     );
 };

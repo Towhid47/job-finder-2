@@ -4,11 +4,37 @@ import calendarIcon from '/icons/calendar.png';
 import phoneIcon from '/icons/phone.png';
 import emailIcon from '/icons/email.png';
 import locationIcon from '/icons/location2.png';
+import { useContext } from 'react';
+import { jobApplyContext } from '../Layouts/Main';
+import Swal from 'sweetalert2';
 
 const DetailsPageContent = (props) => {
 
-    const { company_name, job_title , remote_or_onsite , location , job_type , salary , job_description , educational_requirements , experiences , contact_information , job_responsibility , } = props.data;
+    const { company_name, job_title , remote_or_onsite , location , job_type , salary , job_description , educational_requirements , experiences , contact_information , job_responsibility  } = props.data;
+    
+    
+    const [appliedJobs , setAppliedJobs] = useContext(jobApplyContext);
+    
+    
+    
+    const handleApply = (data) =>{
+          
+       const isExist = appliedJobs.find((appliedJob)=> appliedJob.id === data.id)
 
+       if(isExist){
+          Swal.fire({
+               icon: "error",
+               text: "You can't apply at the same job !",
+             });
+       }
+       else{
+          setAppliedJobs( [...appliedJobs, data] );
+       }
+    }
+
+    console.log(appliedJobs);
+
+    
 
     return (
         <div className='mt-6 grid md:grid-cols-2 gap-2 lg:w-3/4 mx-auto p-9'>
@@ -56,6 +82,8 @@ const DetailsPageContent = (props) => {
                                           <div className='w-14 sm:w-6 '><img src={locationIcon} alt="" className='w-full'/></div> 
                                            <p className='font-semibold'>Address:</p> <p className='text-gray-400'>{contact_information.address}</p>
                                       </div>
+
+                                      <button className='btn mt-6 w-full' onClick={()=> handleApply(props.data) }>Apply Now</button>
                                  </div>
 
 
