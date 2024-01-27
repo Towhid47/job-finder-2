@@ -3,7 +3,6 @@
 *{
   margin: 0;
   padding: 0;
-  text-align: center;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
   
@@ -14,6 +13,19 @@
   color: #997e08;
   padding: 3px 8px ;
   border-radius: 5px;
+}
+
+.btn{
+  border: 1px solid #a78f25;
+  background-image: linear-gradient(to right bottom, #ecc102, #dbb40b, #cba811, #bb9b14, #ab8f17, #a58b19, #a0871b, #9a831c, #9d861e, #a08921, #a48c23, #a78f25);
+  color: white;
+  padding: 3px 8px ;
+  border-radius: 5px;
+}
+
+.btn:hover{
+  background-image: linear-gradient(to right bottom, #d4b425, #cdae21, #c7a81e, #c0a21a, #ba9c16, #b79913, #b49611, #b1930e, #b1930c, #b1920a, #b19207, #b19105);
+  color:black;
 }
 
 

@@ -3,6 +3,7 @@ import './App.css'
 import AboutUs from './components/AboutUs/AboutUs'
 import AppliedJobs from './components/AppliedJobs/AppliedJobs'
 import Home from './components/Home/Home'
+import JobDetailsPage from './components/JobDetailsPage/JobDetailsPage'
 import Main from './components/Layouts/Main'
 
 function App() {
@@ -27,6 +28,10 @@ function App() {
          {
            path: 'about-us',
            element:<AboutUs></AboutUs>
+         },
+         {
+           path:'job-details/:id',
+           element:<JobDetailsPage></JobDetailsPage>
          }
       ]
     }

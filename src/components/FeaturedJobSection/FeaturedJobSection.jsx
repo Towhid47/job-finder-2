@@ -13,7 +13,7 @@ const FeaturedJobSection = () => {
     const [search] = inputSearch;
 
     return (
-        <div className='my-24'>
+        <div className='my-24 text-center'>
               <h1 className='text-3xl font-semibold mt-4'>Featured Jobs</h1>
              <p className='text-gray-400 mt-2 w-11/12 mx-auto'>Explore thousands of job opportunities with all the information you need. Its your future</p>
              

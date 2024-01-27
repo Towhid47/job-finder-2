@@ -25,7 +25,7 @@ const Banner = () => {
            
              <div className='flex items-center h-full justify-center flex-col banner-text text-white'>
                   <h1 className='md:text-5xl  text-2xl'>Find Your Perfect Dream Job</h1><br />
-                  <p className='w-52 md:w-full'>Job Finder lets you find out your preferred job very easily  </p>
+                  <p className='w-52 md:w-full text-center'>Job Finder lets you find out your preferred job very easily  </p>
                   <br /><br />
                  
                   {/* ///////// Input Search Bar /////////////// */}

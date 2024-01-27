@@ -6,7 +6,7 @@ import categoriesData from '../../data/categories.json';
 
 const CategorySection = () => {
     return (
-        <div className='my-9'>
+        <div className='my-9 text-center'>
              <h1 className='text-3xl font-semibold mt-4'>Job Category List</h1>
              <p className='text-gray-400 mt-2 w-11/12 mx-auto'>Explore thousands of job opportunities with all the information you need. Its your future</p>
              

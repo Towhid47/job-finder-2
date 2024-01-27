@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 const FeaturedJobCard = (props) => {
 
-    const {logo, job_title , company_name, remote_or_onsite, location, salary, job_type} = props.job;
+    const {id, logo, job_title , company_name, remote_or_onsite, location, salary, job_type} = props.job;
 
     return (
         <div className='bg-gray-100 border-2 border-gray-200 lg:p-7 p-5 lg:mx-9 mx-4 flex flex-col items-start gap-5'>
@@ -20,6 +21,8 @@ const FeaturedJobCard = (props) => {
                     <div className='flex items-center'><img src="icons/Location.png" alt="" /> {location}</div>
                     <div className='flex items-center'><img src="icons/money.png" alt=""/> {salary}</div>
              </div>
+
+             <Link to={`/job-details/${id}`}><button className='btn'>View Details</button></Link>
         </div>
     );
 };

@@ -5,7 +5,6 @@ const CategoryCard = (props) => {
 
     const {logo, category_name} = props.categoryData;
 
-    console.log(category_name);
 
 
     return (
