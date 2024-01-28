@@ -1,8 +1,34 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Job Finder
 
-Currently, two official plugins are available:
+This web application is for those who are seeking their dream jobs and apply to them. It provides many kinds of jobs and user can search according to his choice.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+
+## Live Website Link
+
+https://job-finder47.netlify.app/
+
+
+
+
+## Features
+
+- Single page web application
+- User can able to search data according to his choice
+- Fully Responsive 
+- Cross platform
+- User can apply multiple different jobs
+- Local JSON data has been used
+
+
+## Authors
+
+https://github.com/Towhid47
+
+
+## Tech Stack
+
+**Client:** React JS, TailwindCSS , React-Router V6 , Netlify 
+
