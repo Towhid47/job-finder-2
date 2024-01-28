@@ -29,6 +29,11 @@ const DetailsPageContent = (props) => {
        }
        else{
           setAppliedJobs( [...appliedJobs, data] );
+          Swal.fire({
+               icon: "success",
+               text: "Applied Successfully",
+             });
+          
        }
     }
 
