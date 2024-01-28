@@ -1,10 +1,12 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, Link, RouterProvider } from 'react-router-dom'
 import './App.css'
 import AboutUs from './components/AboutUs/AboutUs'
 import AppliedJobs from './components/AppliedJobs/AppliedJobs'
 import Home from './components/Home/Home'
 import JobDetailsPage from './components/JobDetailsPage/JobDetailsPage'
 import Main from './components/Layouts/Main'
+
+import errorImage from '../src/image/error.jpg';
 
 function App() {
 
@@ -34,6 +36,13 @@ function App() {
            element:<JobDetailsPage></JobDetailsPage>
          }
       ]
+    },
+    {
+      path:'*',
+      element:<div className='w-1/2 mx-auto flex flex-col justify-center items-center h-screen'>
+             <img src={errorImage} alt="" />
+            <Link to='/'> <button className='mt-8 btn'>Back to Home Page</button></Link>
+      </div>
     }
   ])
   
