@@ -14,7 +14,12 @@ const Banner = () => {
 
     const handleSearch = (e) =>{
        
-         setSearch(e.target.value);
+         let value = e.target.value;
+         
+         let valueInLowerCase = value.toLowerCase();
+
+         setSearch(valueInLowerCase);
+
        
     }
 
